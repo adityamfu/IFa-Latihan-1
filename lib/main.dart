@@ -42,18 +42,13 @@ class MyApp extends StatelessWidget {
                 height: 50,
                 color: Colors.grey,
               ),
-              ListView.builder(
-                  itemCount: 6,
-                  itemBuilder: (context, i) {
-                  return numberTruthList[i]
-                  ? ListTile(
-                  title: Text(numberTruthList[i].toString()),
-                  )
-                  : Container(
-                  height: 0,
-                  width: 0,
-                  );
-                  },
+              Row(
+                children: [
+                  Text("data 1"),
+                  Text("data 2"),
+                  Text("data 3"),
+                  Text("data 4"),
+                ],
               ),
             ],
           ),
